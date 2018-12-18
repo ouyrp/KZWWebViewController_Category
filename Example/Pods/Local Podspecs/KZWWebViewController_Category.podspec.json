@@ -1,6 +1,6 @@
 {
   "name": "KZWWebViewController_Category",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "summary": "A short description of KZWWebViewController_Category.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ouyrp/KZWWebViewController_Category",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ouyrp/KZWWebViewController_Category.git",
-    "tag": "0.1.0"
+    "tag": "2.0.0"
   },
   "platforms": {
     "ios": "8.0"
