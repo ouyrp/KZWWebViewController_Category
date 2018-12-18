@@ -9,9 +9,9 @@
 
 @implementation KZWRouter (KZWWebViewController)
 
-- (UIViewController *)kzw_KZWWebViewController:(NSString *)urlString callBackHandle:(void (^)(void))callBackHandl {
+- (UIViewController *)kzw_KZWWebViewController:(NSString *)urlString callBackHandle:(void (^)(NSString *))callBackHandle {
      NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    params[@"callback"] = callBackHandl;
+    params[@"callBack"] = callBackHandle;
     params[@"urlString"] = urlString;
     return [self performTarget:@"KZWRouter_KZWWebViewController" action:@"KZWWebViewController" params:params shouldCacheTarget:NO];
 }

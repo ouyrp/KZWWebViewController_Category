@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KZWRouter (KZWWebViewController)
 
-- (UIViewController *)kzw_KZWWebViewController:(NSString *)urlString callBackHandle:(void (^)(void))callBackHandle;
+- (UIViewController *)kzw_KZWWebViewController:(NSString *)urlString callBackHandle:(void (^)(NSString *))callBackHandle;
 
 @end
 

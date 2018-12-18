@@ -23,8 +23,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    UIViewController *controller = [[KZWRouter sharedRouter] kzw_KZWWebViewController:@"https%3a%2f%2fwww.zhihu.com%2f" callBackHandle:^{
-        
+    UIViewController *controller = [[KZWRouter sharedRouter] kzw_KZWWebViewController:@"https%3a%2f%2fwww.zhihu.com%2f" callBackHandle:^(NSString *result) {
+        NSLog(@"result:%@", result);
     }];
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController:controller] animated:YES completion:nil];
     
